@@ -49,7 +49,7 @@ public class DAOService {
 			String connectionString = "jdbc:oracle:thin:@" + host +":1521/pdb1";
 			
 			connection=DriverManager.getConnection(  
-					connectionString,"u12","u12");  
+					connectionString,"u18","u18");  
 					  
 			
 		return connection;

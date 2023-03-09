@@ -56,6 +56,12 @@ public class Prodotto {
 	public void setCollocazione(String collocazione) {
 		this.collocazione = collocazione;
 	}
+
+	@Override
+	public String toString() {
+		return "Prodotto [prodottoId=" + prodottoId + ", descrizione=" + descrizione + ", quantita=" + quantita
+				+ ", prezzo=" + prezzo + ", collocazione=" + collocazione + "]";
+	}
 	
 	
 
