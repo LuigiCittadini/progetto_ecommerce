@@ -5,15 +5,15 @@ public class Prodotto {
 	private String prodottoId;
 	private String descrizione;
 	private int quantita;
-	private float prezzo;
+	private double prezzo;
 	private String collocazione;
 	
-	public Prodotto(String prodottoId, String descrizione, int quantita, float prezzo, String collocazione) {
+	public Prodotto(String prodottoId, String descrizione, int quantita, double d, String collocazione) {
 		super();
 		this.prodottoId = prodottoId;
 		this.descrizione = descrizione;
 		this.quantita = quantita;
-		this.prezzo = prezzo;
+		this.prezzo = d;
 		this.collocazione = collocazione;
 	}
 
@@ -41,11 +41,11 @@ public class Prodotto {
 		this.quantita = quantita;
 	}
 
-	public float getPrezzo() {
+	public double getPrezzo() {
 		return prezzo;
 	}
 
-	public void setPrezzo(float prezzo) {
+	public void setPrezzo(double prezzo) {
 		this.prezzo = prezzo;
 	}
 

@@ -2,7 +2,10 @@ package it.exolab.jdbc.service;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import it.exolab.jdbc.model.Prodotto;
 
 public class DAOService {
 
@@ -19,7 +22,7 @@ public class DAOService {
 		return instance;
 	}
 	
-	private void closeConnection() throws SQLException {
+	public void closeConnection() throws SQLException {
 		
 		if(connection == null) {
 			return;
@@ -30,7 +33,7 @@ public class DAOService {
 		
 	}
 	
-    private Connection getConnection() throws ClassNotFoundException, SQLException {
+    public Connection getConnection() throws ClassNotFoundException, SQLException {
 		
 		if(connection != null) {
 			return connection;
@@ -52,7 +55,6 @@ public class DAOService {
 		return connection;
 		  
 	}
-    
     
 	
 }
